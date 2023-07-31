@@ -32,6 +32,20 @@ const config = {
     locales: ["en"],
   },
 
+  plugins: [
+    // https://dev.to/sajclarke_62/using-tailwindcss-v3-in-docusaurus-in-5-steps-5c26
+    async function tailwind(context, options) {
+      return {
+        name: "docusaurus-plugin-tailwindcss",
+        configurePostCss(postcssOptions) {
+          postcssOptions.plugins.push(require("tailwindcss"));
+          postcssOptions.plugins.push(require("autoprefixer"));
+          return postcssOptions;
+        },
+      };
+    },
+  ],
+
   presets: [
     [
       "classic",
@@ -67,7 +81,7 @@ const config = {
         title: "Course",
         logo: {
           alt: "Eductn Logo",
-          src: "img/logo.svg",
+          src: "img/docusaurus.png",
         },
         items: [
           {
