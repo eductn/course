@@ -12,7 +12,7 @@ export default function Home() {
           <h1 className="text-8xl">{siteConfig.title}</h1>
           <p className="text-3xl">{siteConfig.tagline}</p>
           <Link
-            to="/docs"
+            to="/docs/intro"
             className="w-fit text-black bg-white px-3 py-2 rounded-md"
           >
             Start Course
