@@ -7,7 +7,7 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout>
-      <header className="flex justify-center py-5 bg-[color:var(--ifm-color-primary)]">
+      <header className="flex justify-center items-center h-[80vh] py-5 bg-[color:var(--ifm-color-primary)]">
         <div className="flex flex-col gap-2 w-full max-w-screen-lg">
           <h1 className="text-8xl">{siteConfig.title}</h1>
           <p className="text-3xl">{siteConfig.tagline}</p>
