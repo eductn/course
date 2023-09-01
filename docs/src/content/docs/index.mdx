@@ -1,0 +1,38 @@
+---
+title: Welcome to Eductn
+description: Learn xyz...
+template: splash
+hero:
+  title: |
+    Welcome to the eductn course!
+  tagline: Learn about xyz in 123.
+  image:
+    file: ../../assets/houston.webp
+  actions:
+    - text: Get setup
+      link: /lessons/setup
+      icon: right-arrow
+      variant: primary
+    - text: or dive into the first lesson
+      link: /lessons/1
+      icon: right-arrow
+---
+
+import { Card, CardGrid } from "@astrojs/starlight/components";
+
+## Next steps
+
+<CardGrid stagger>
+  <Card title="Lesson 1" icon="pencil">
+    Learn abc...
+  </Card>
+  <Card title="Lesson 2" icon="add-document">
+    Learn def...
+  </Card>
+  <Card title="Lesson 3" icon="setting">
+    Learn ghi...
+  </Card>
+  <Card title="Lesson 4" icon="open-book">
+    Learn jkl...
+  </Card>
+</CardGrid>
