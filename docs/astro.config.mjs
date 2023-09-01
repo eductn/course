@@ -8,6 +8,8 @@ export default defineConfig({
     starlight({
       title: "Eductn: Course",
       social: {
+        twitch: "https://twitch.tv/dotmrjosh",
+        youtube: "https://youtube.com/@dotmrjosh",
         github: "https://github.com/eductn/course",
       },
       sidebar: [
